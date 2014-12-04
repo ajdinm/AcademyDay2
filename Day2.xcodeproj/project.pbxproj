@@ -14,6 +14,8 @@
 		E911B1181A2F76BA00CF8838 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E911B1171A2F76BA00CF8838 /* Images.xcassets */; };
 		E911B11B1A2F76BA00CF8838 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E911B1191A2F76BA00CF8838 /* LaunchScreen.xib */; };
 		E911B1271A2F76BA00CF8838 /* Day2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E911B1261A2F76BA00CF8838 /* Day2Tests.m */; };
+		E9B67CD51A30CB7B00311B0E /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B67CD41A30CB7B00311B0E /* User.m */; };
+		E9B67CD81A30E4D200311B0E /* ShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B67CD71A30E4D200311B0E /* ShowViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		E911B1201A2F76BA00CF8838 /* Day2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Day2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E911B1251A2F76BA00CF8838 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E911B1261A2F76BA00CF8838 /* Day2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Day2Tests.m; sourceTree = "<group>"; };
+		E9B67CD31A30CB7B00311B0E /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		E9B67CD41A30CB7B00311B0E /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		E9B67CD61A30E4D200311B0E /* ShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowViewController.h; sourceTree = "<group>"; };
+		E9B67CD71A30E4D200311B0E /* ShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +87,10 @@
 		E911B1091A2F76BA00CF8838 /* Day2 */ = {
 			isa = PBXGroup;
 			children = (
+				E9B67CD11A30CAB200311B0E /* Models */,
+				E9B67CD21A30CAC900311B0E /* Controllers */,
 				E911B10E1A2F76BA00CF8838 /* AppDelegate.h */,
 				E911B10F1A2F76BA00CF8838 /* AppDelegate.m */,
-				E911B1111A2F76BA00CF8838 /* ViewController.h */,
-				E911B1121A2F76BA00CF8838 /* ViewController.m */,
 				E911B1141A2F76BA00CF8838 /* Main.storyboard */,
 				E911B1171A2F76BA00CF8838 /* Images.xcassets */,
 				E911B1191A2F76BA00CF8838 /* LaunchScreen.xib */,
@@ -117,6 +123,26 @@
 				E911B1251A2F76BA00CF8838 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E9B67CD11A30CAB200311B0E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E9B67CD31A30CB7B00311B0E /* User.h */,
+				E9B67CD41A30CB7B00311B0E /* User.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E9B67CD21A30CAC900311B0E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E9B67CD61A30E4D200311B0E /* ShowViewController.h */,
+				E9B67CD71A30E4D200311B0E /* ShowViewController.m */,
+				E911B1111A2F76BA00CF8838 /* ViewController.h */,
+				E911B1121A2F76BA00CF8838 /* ViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +245,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9B67CD51A30CB7B00311B0E /* User.m in Sources */,
+				E9B67CD81A30E4D200311B0E /* ShowViewController.m in Sources */,
 				E911B1131A2F76BA00CF8838 /* ViewController.m in Sources */,
 				E911B1101A2F76BA00CF8838 /* AppDelegate.m in Sources */,
 				E911B10D1A2F76BA00CF8838 /* main.m in Sources */,
@@ -412,6 +440,7 @@
 				E911B12C1A2F76BA00CF8838 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E911B12D1A2F76BA00CF8838 /* Build configuration list for PBXNativeTarget "Day2Tests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +449,7 @@
 				E911B12F1A2F76BA00CF8838 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

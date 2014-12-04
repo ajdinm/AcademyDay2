@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-    
+#import "ShowViewController.h"
 
 @implementation ViewController
 
@@ -20,6 +20,16 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqual: @"showUser"]) {
+        
+        ShowViewController *controller = (ShowViewController*)[segue destinationViewController];
+        [controller setNewUser:self.user];
+        
+    }
+}
+
 -(BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     return  YES;
@@ -27,11 +37,16 @@
 }
 
 - (IBAction)saveAndShowClicked:(id)sender {
-    NSString *firstName = self.firstNametf.text;
-    NSString *lastName = self.lastNametf.text;
     
-    NSString *fullName = [ [NSString alloc] initWithFormat: @"%@, %@", firstName, lastName];
-    _result.text = fullName;
+    NSInteger temp = [self.yearOfBirth.text integerValue];
+    
+    self.user = [[User alloc] initWithFirstName:self.firstNametf.text andLastName:self.lastNametf.text andBirthYear: temp];
+                  
+    _result.text = [self.user getFullName];
+    self.yearsVar.text = [self.user getYearsOld];
+    [self performSegueWithIdentifier:@"showUser" sender:self];
+    
 }
+    
 
 @end
