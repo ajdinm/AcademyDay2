@@ -16,6 +16,7 @@
 		E911B1271A2F76BA00CF8838 /* Day2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E911B1261A2F76BA00CF8838 /* Day2Tests.m */; };
 		E9B67CD51A30CB7B00311B0E /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B67CD41A30CB7B00311B0E /* User.m */; };
 		E9B67CD81A30E4D200311B0E /* ShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B67CD71A30E4D200311B0E /* ShowViewController.m */; };
+		E9EC35161A3223E3002005B3 /* UsersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9EC35151A3223E3002005B3 /* UsersViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		E9B67CD41A30CB7B00311B0E /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		E9B67CD61A30E4D200311B0E /* ShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowViewController.h; sourceTree = "<group>"; };
 		E9B67CD71A30E4D200311B0E /* ShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowViewController.m; sourceTree = "<group>"; };
+		E9EC35141A3223E3002005B3 /* UsersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsersViewController.h; sourceTree = "<group>"; };
+		E9EC35151A3223E3002005B3 /* UsersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsersViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,8 @@
 		E911B0FE1A2F76BA00CF8838 = {
 			isa = PBXGroup;
 			children = (
+				E9EC35141A3223E3002005B3 /* UsersViewController.h */,
+				E9EC35151A3223E3002005B3 /* UsersViewController.m */,
 				E911B1091A2F76BA00CF8838 /* Day2 */,
 				E911B1231A2F76BA00CF8838 /* Day2Tests */,
 				E911B1081A2F76BA00CF8838 /* Products */,
@@ -248,6 +253,7 @@
 				E9B67CD51A30CB7B00311B0E /* User.m in Sources */,
 				E9B67CD81A30E4D200311B0E /* ShowViewController.m in Sources */,
 				E911B1131A2F76BA00CF8838 /* ViewController.m in Sources */,
+				E9EC35161A3223E3002005B3 /* UsersViewController.m in Sources */,
 				E911B1101A2F76BA00CF8838 /* AppDelegate.m in Sources */,
 				E911B10D1A2F76BA00CF8838 /* main.m in Sources */,
 			);
